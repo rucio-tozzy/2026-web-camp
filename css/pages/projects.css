@@ -203,6 +203,10 @@
   gap: 0;
 }
 
+.project-tags--plain {
+  gap: 0;
+}
+
 .project-tags--inline li,
 .project-tags--plain li {
   min-height: auto;
@@ -249,8 +253,8 @@
 }
 
 .project-dialog {
-  width: min(1420px, calc(100% - 64px));
-  max-height: min(920px, calc(100% - 48px));
+  width: min(1080px, calc(100% - 64px));
+  max-height: min(900px, calc(100% - 48px));
   padding: 0;
   border: 0;
   border-radius: 0;
@@ -280,8 +284,8 @@
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  min-height: 86px;
-  padding-inline: clamp(24px, 4vw, 56px);
+  min-height: 72px;
+  padding-inline: clamp(24px, 3.5vw, 44px);
   background: #fff;
 }
 
@@ -292,94 +296,105 @@
 
 .project-dialog__hero-media img {
   width: 100%;
-  height: clamp(150px, 17vw, 230px);
+  height: clamp(210px, 20vw, 300px);
   object-fit: cover;
   object-position: center;
 }
 
 .project-dialog__body {
   display: grid;
-  gap: clamp(18px, 2.4vw, 30px);
-  padding: clamp(36px, 5vw, 64px) clamp(32px, 5vw, 72px) clamp(36px, 5vw, 60px);
+  gap: 16px;
+  padding: clamp(34px, 4vw, 44px) clamp(34px, 4vw, 48px) clamp(42px, 4.5vw, 56px);
 }
 
 .project-dialog__meta-row {
   display: flex;
   flex-wrap: wrap;
-  gap: 16px 24px;
+  gap: 12px 24px;
   align-items: center;
   justify-content: space-between;
   color: #404040;
-  font-size: clamp(18px, 1.5vw, 24px);
-  font-weight: 900;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 1.5;
 }
 
 .project-dialog__meta-row time {
   color: #404040;
-  font-weight: 900;
+  font-weight: 800;
 }
 
 .project-dialog__body h2 {
-  max-width: 860px;
+  max-width: 720px;
   margin: 0;
   color: #404040;
-  font-size: clamp(32px, 3.2vw, 48px);
+  font-size: clamp(26px, 2.4vw, 32px);
   font-weight: 900;
-  line-height: 1.28;
+  line-height: 1.45;
   letter-spacing: 0.03em;
 }
 
 .project-dialog__intro {
   margin: 0;
   color: #404040;
-  font-size: clamp(18px, 1.7vw, 24px);
+  font-size: 16px;
   font-weight: 900;
-  line-height: 1.6;
+  line-height: 1.7;
 }
 
 .project-dialog__description-grid {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(260px, 0.48fr);
-  gap: clamp(32px, 6vw, 92px);
+  grid-template-columns: minmax(0, 1fr) minmax(360px, 0.46fr);
+  gap: clamp(28px, 4vw, 56px);
   align-items: start;
+  padding-top: 18px;
 }
 
 .project-dialog__description-grid > p {
   margin-bottom: 0;
-  color: #6e6e6e;
-  font-size: clamp(18px, 1.6vw, 24px);
-  font-weight: 800;
-  line-height: 1.7;
+  color: #767676;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.85;
 }
 
 .project-dialog__specs {
   display: grid;
   grid-template-columns: 1fr;
   gap: 8px;
-  padding-left: clamp(24px, 3vw, 40px);
+  padding-left: clamp(22px, 2.4vw, 30px);
   border-left: 1px solid #9e9e9e;
 }
 
 .project-dialog__specs p {
   margin: 0;
-  color: #6e6e6e;
-  font-size: clamp(18px, 1.6vw, 24px);
-  font-weight: 900;
-  line-height: 1.65;
+  color: #767676;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.7;
 }
 
 .project-dialog__specs strong {
-  color: #6e6e6e;
-  font-weight: 900;
+  color: #767676;
+  font-weight: 700;
+}
+
+body.projects-template .project-dialog .project-dialog__specs p span {
+  display: inline;
+  margin-bottom: 0;
+  color: #767676;
+  font-size: inherit;
+  font-weight: inherit;
+  letter-spacing: 0;
 }
 
 .project-dialog__showcase {
-  padding: clamp(44px, 6vw, 88px) clamp(28px, 8vw, 140px) 0;
+  padding: clamp(58px, 6vw, 80px) clamp(28px, 7vw, 120px) 0;
   background: var(--color-bg);
 }
 
 .project-dialog__showcase img {
-  width: min(940px, 100%);
+  width: min(820px, 100%);
   max-height: none;
   margin-inline: auto;
   object-fit: contain;
@@ -389,15 +404,18 @@
 
 .modal-close {
   position: static;
-  width: 48px;
-  height: 48px;
+  display: grid;
+  width: 36px;
+  height: 36px;
+  place-items: center;
   border: 0;
   border-radius: 0;
   background: transparent;
-  color: #404040;
-  font-size: 42px;
+  color: #6f6f6f;
+  font-size: 34px;
   font-weight: 300;
   line-height: 1;
+  outline: 0;
   box-shadow: none;
 }
 
@@ -405,6 +423,11 @@
 .modal-close:focus-visible {
   color: var(--color-accent);
   background: transparent;
+}
+
+.modal-close:focus-visible {
+  outline: 1px solid #9e9e9e;
+  outline-offset: 2px;
 }
 
 @media (max-width: 1024px) {
@@ -470,17 +493,26 @@
   }
 
   .project-dialog__topbar {
-    min-height: 64px;
+    min-height: 58px;
     padding-inline: 18px;
   }
 
+  .project-dialog__hero-media img {
+    height: 220px;
+  }
+
   .project-dialog__body {
-    padding: 28px 20px 32px;
+    gap: 14px;
+    padding: 28px 20px 34px;
   }
 
   .project-dialog__meta-row {
     align-items: flex-start;
     flex-direction: column;
+  }
+
+  .project-dialog__description-grid {
+    padding-top: 8px;
   }
 
   .project-dialog__showcase {
