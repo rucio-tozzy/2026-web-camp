@@ -1,0 +1,135 @@
+/* 專案彈窗元件：dialog 外觀、內容版面與關閉按鈕。 */
+
+.project-dialog {
+  width: min(1080px, calc(100% - 32px));
+  max-height: min(900px, calc(100% - 32px));
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  color: var(--color-primary);
+}
+
+.project-dialog::backdrop {
+  background: rgba(43, 27, 19, 0.62);
+  backdrop-filter: blur(4px);
+}
+
+.project-dialog[open] {
+  animation: modalIn 0.28s ease both;
+}
+
+.project-dialog__shell {
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(280px, 0.95fr) minmax(0, 1.05fr);
+  min-width: 0;
+  overflow: clip;
+  border: 1px solid rgba(255, 255, 255, 0.72);
+  border-radius: 0;
+  background: var(--color-surface);
+  box-shadow: var(--shadow-lg);
+}
+
+.project-dialog__media {
+  position: relative;
+  min-width: 0;
+  min-height: 100%;
+  background: var(--color-bg-soft);
+}
+
+.project-dialog__media img {
+  width: 100%;
+  height: 100%;
+  min-height: 520px;
+  object-fit: cover;
+}
+
+.project-dialog__label {
+  position: absolute;
+  left: 24px;
+  top: 24px;
+  padding: 8px 14px;
+  border-radius: 0;
+  color: #fff;
+  background: rgba(43, 27, 19, 0.76);
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  backdrop-filter: blur(10px);
+}
+
+.project-dialog__body {
+  display: grid;
+  min-width: 0;
+  align-content: center;
+  gap: 18px;
+  padding: clamp(28px, 4vw, 54px);
+}
+
+.project-dialog__body h2 {
+  margin: 0;
+  font-size: clamp(30px, 4vw, 54px);
+  font-weight: 900;
+  letter-spacing: 0.03em;
+  overflow-wrap: anywhere;
+}
+
+.project-dialog__intro {
+  font-size: 18px;
+  color: var(--color-primary-2);
+}
+
+.project-dialog__specs {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.project-dialog__specs div {
+  min-width: 0;
+  padding: 18px;
+  border: 1px solid var(--color-border);
+  border-radius: 0;
+  background: var(--color-surface-warm);
+}
+
+.project-dialog__specs span {
+  display: block;
+  margin-bottom: 8px;
+  color: var(--color-accent);
+  font-size: 13px;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+}
+
+.project-dialog__specs p {
+  margin-bottom: 0;
+  color: var(--color-primary);
+  font-weight: 800;
+}
+
+.project-dialog__content {
+  padding-top: 4px;
+}
+
+.project-dialog__content p {
+  margin-bottom: 0;
+}
+
+.modal-close {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  z-index: 3;
+  display: grid;
+  width: 46px;
+  height: 46px;
+  place-items: center;
+  border: 0;
+  border-radius: 0;
+  background: rgba(255, 255, 255, 0.92);
+  color: var(--color-primary);
+  font-size: 30px;
+  line-height: 1;
+  box-shadow: var(--shadow-xs);
+}
