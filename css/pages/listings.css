@@ -1,5 +1,7 @@
 /* 列表與共用區塊：作品卡片、部落格列表、訂閱區與 FAQ。 */
 
+.project-grid,
+.blog-grid,
 .case-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
