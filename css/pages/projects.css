@@ -260,6 +260,14 @@
   border-radius: 0;
   background: #fff;
   color: #404040;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.project-dialog::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  display: none;
 }
 
 .project-dialog::backdrop {
