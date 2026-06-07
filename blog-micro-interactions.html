@@ -36,7 +36,7 @@
             <span aria-hidden="true"></span>
             <a href="./blog.html">部落格</a>
             <span aria-hidden="true"></span>
-            <span>部落格標題</span>
+            <span>網頁裡的微互動藝術：利用 CSS 與 JS 動畫為諮詢網站注入靈魂並提升用戶轉化率</span>
           </nav>
         </div>
       </div>
@@ -49,36 +49,53 @@
           </div>
           <h1>網頁裡的微互動藝術：利用 CSS 與 JS 動畫為諮詢網站注入靈魂並提升用戶轉化率</h1>
           <p class="lead">微互動不是裝飾，而是讓使用者理解狀態、感受回饋並願意繼續操作的關鍵細節。</p>
-          <p>在諮詢型網站裡，微互動能把服務說明、表單填寫與 CTA 引導串成更順暢的體驗。本文從設計判斷到前端實作拆解微互動的落點，讓動畫不只是裝飾，而是協助使用者理解狀態並提高轉換意願。</p>
+          <p>在諮詢型網站裡，使用者通常還在觀望、比較與建立信任。這時候微互動不只是讓畫面更有動感，而是替每一次滑動、點擊與填寫補上清楚回饋，讓服務流程更像有人在旁邊引導。</p>
         </div>
       </header>
 
       <div class="container article-container">
           <div class="article-content article-body" data-aos="fade-up" data-aos-delay="120">
               <section>
-                <h2>微互動讓介面有回饋感</h2>
-                <p>按鈕 hover、表單驗證、載入狀態與捲動提示都是微互動的一部分。好的微互動不會搶走主視覺，而是在正確時機補上回饋，讓使用者知道目前狀態與下一步。</p>
+                <h2>微互動不是裝飾，而是對使用者的回應</h2>
+                <p>按鈕 hover 時的明確變化、欄位 focus 時的邊框提示、表單送出後的 loading 狀態，都在告訴使用者系統有收到動作。這些細節越清楚，使用者越不需要猜測下一步。</p>
               </section>
               <figure class="article-inline-image">
-                <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2026-web-camp/blog_content_1.png" alt="設計工作流與介面規劃示意圖">
-                <figcaption>將概念、內容與設計規格整理成團隊能理解的介面流程，是跨領域協作的關鍵。</figcaption>
+                <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2026-web-camp/blog_1.png" alt="手機介面微互動與數位產品視覺示意圖">
+                <figcaption>微互動的價值不在炫技，而在於讓使用者每一步都知道自己正在正確的路徑上。</figcaption>
               </figure>
               <section>
-                <h2>動畫要服務轉換目標</h2>
-                <p>諮詢型網站的重點通常是引導使用者理解服務、建立信任並送出表單。動畫應該放在重點 CTA、內容進場與卡片狀態，避免在非關鍵元素上消耗注意力。</p>
+                <h2>從 CSS 開始建立穩定的動態節奏</h2>
+                <p>多數介面回饋不需要複雜框架。使用 transition、transform 與 opacity 就能建立自然的節奏。關鍵是時間、距離與 easing 要一致，讓按鈕、卡片和連結像同一個產品系統。</p>
               </section>
-              <figure class="article-inline-image">
-                <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2026-web-camp/blog_content_2.png" alt="前端開發與視覺設計協作示意圖">
-                <figcaption>把元件狀態、互動規則與 RWD 檢查流程文件化，可以讓交付更穩定。</figcaption>
-              </figure>
               <section>
-                <h2>CSS 與 JS 的分工</h2>
-                <p>單純的 hover、transition 與進場效果可以交給 CSS；需要根據捲動、篩選、表單狀態改變畫面的地方，再使用 JavaScript 控制 class。這樣可以兼顧效能與維護性。</p>
+                <h2>JavaScript 應該用在需要狀態判斷的互動</h2>
+                <p>當互動牽涉到滾動進度、即時驗證、多步驟表單或送出狀態時，JavaScript 才是主角。它不只是增加效果，而是降低使用者放棄流程的機率。</p>
+              </section>
+              <section>
+                <h2>諮詢網站常見微互動配置表</h2>
+                <div class="article-table-wrap">
+                  <table>
+                    <thead>
+                      <tr><th>互動位置</th><th>建議做法</th><th>使用者感受</th></tr>
+                    </thead>
+                    <tbody>
+                      <tr><td>導覽連結</td><td>hover 底線、目前頁面提示</td><td>知道自己可以往哪裡走</td></tr>
+                      <tr><td>CTA 按鈕</td><td>按下位移、送出 loading</td><td>確認點擊已被接收</td></tr>
+                      <tr><td>表單欄位</td><td>focus 邊框、錯誤文字、成功狀態</td><td>降低填寫過程的不確定感</td></tr>
+                      <tr><td>內容卡片</td><td>淡入、陰影、圖片微縮放</td><td>建立閱讀節奏與層次</td></tr>
+                    </tbody>
+                  </table>
+                </div>
+              </section>
+              <section>
+                <h2>轉化率來自被照顧的感覺</h2>
+                <p>諮詢網站的轉換不只取決於 CTA 是否醒目，也取決於使用者是否感到安心。當每個操作都有回饋、每個狀態都能被理解，信任就會在細節裡累積。</p>
               </section>
 
             <blockquote>
               <p>微互動的價值不是炫技，而是讓使用者每一次操作都有被理解的感覺。</p>
             </blockquote>
+            <p>微互動不該等到畫面完成後才補上，而應該從設計階段就被納入流程。當細節能讓使用者更順地前進，網站自然會更有說服力。</p>
             <footer class="article-footer-actions" aria-label="文章互動資訊">
               <div class="article-stats">
                 <span>110 views</span>

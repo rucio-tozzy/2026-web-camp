@@ -36,7 +36,7 @@
             <span aria-hidden="true"></span>
             <a href="./blog.html">部落格</a>
             <span aria-hidden="true"></span>
-            <span>部落格標題</span>
+            <span>揭開金融 App 的設計密碼：如何優化 Open Bank API 的複雜數據呈現與後端串接安全性</span>
           </nav>
         </div>
       </div>
@@ -45,40 +45,57 @@
         <div class="container article-hero__inner">
           <div class="article-kicker">
           <ul class="article-tags" aria-label="文章標籤"><li>前端技術</li><li>後端架構</li><li>AI 趨勢應用</li></ul>
-            <time datetime="2022-10-16">Oct 16, 2022</time>
+            <time datetime="2022-10-12">Oct 12, 2022</time>
           </div>
           <h1>揭開金融 App 的設計密碼：如何優化 Open Bank API 的複雜數據呈現與後端串接安全性</h1>
           <p class="lead">金融產品介面需要同時處理資料可信度、狀態提示、錯誤回饋與後端串接安全性。</p>
-          <p>金融 App 的設計核心不只是漂亮的圖表，而是讓使用者理解資料來源、同步狀態與安全風險。本文從 Open Bank API 的資料呈現與後端串接情境出發，整理金融介面如何建立透明且可信任的操作體驗。</p>
+          <p>金融產品的設計難度，往往不在於畫面是否漂亮，而在於如何把大量、敏感且即時變動的資料轉換成使用者能理解並信任的介面。Open Bank API 讓資料更容易整合，也讓設計與工程必須一起處理透明度與安全感。</p>
         </div>
       </header>
 
       <div class="container article-container">
           <div class="article-content article-body" data-aos="fade-up" data-aos-delay="120">
               <section>
-                <h2>複雜資料需要清楚的分層</h2>
-                <p>金融 App 需要顯示帳戶、交易、分類、授權與同步狀態。設計時應先建立資訊層級，讓使用者先看到總覽，再深入查看細節。</p>
+                <h2>複雜資料需要先被整理成決策線索</h2>
+                <p>帳戶餘額、交易紀錄、信用狀態與投資比例，對系統來說只是欄位，對使用者卻是生活決策依據。介面應先提供摘要與分層，再讓使用者深入細節。</p>
               </section>
               <figure class="article-inline-image">
-                <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2026-web-camp/blog_content_1.png" alt="設計工作流與介面規劃示意圖">
-                <figcaption>將概念、內容與設計規格整理成團隊能理解的介面流程，是跨領域協作的關鍵。</figcaption>
+                <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2026-web-camp/blog_5.png" alt="金融 App 與程式碼資料串接視覺示意圖">
+                <figcaption>金融產品的核心不是展示更多資料，而是讓資料變成可理解的判斷依據。</figcaption>
               </figure>
               <section>
-                <h2>API 狀態也要被設計</h2>
-                <p>後端串接不只要成功取得資料，也要處理授權過期、同步中、資料延遲與錯誤重試。這些狀態都需要在前端有明確提示。</p>
+                <h2>API 串接要設計異常狀態</h2>
+                <p>Open Bank API 可能面對不同金融機構、不同欄位格式與不同同步時間。介面不能只設計成功狀態，也要納入 loading、partial data、retry 與重新授權流程。</p>
               </section>
-              <figure class="article-inline-image">
-                <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2026-web-camp/blog_content_2.png" alt="前端開發與視覺設計協作示意圖">
-                <figcaption>把元件狀態、互動規則與 RWD 檢查流程文件化，可以讓交付更穩定。</figcaption>
-              </figure>
               <section>
-                <h2>安全感來自透明與一致</h2>
-                <p>金融產品的信任感不只來自深色或科技感視覺，而是每一步操作都能讓使用者知道資料來源、同步時間與風險提示。</p>
+                <h2>安全性需要被使用者看見</h2>
+                <p>後端安全機制再完整，如果使用者無法理解，也很難建立信任。授權說明、資料更新時間、登出與撤銷授權的位置，都會影響使用者是否敢繼續操作。</p>
+              </section>
+              <section>
+                <h2>金融 App 設計挑戰與技術對應表</h2>
+                <div class="article-table-wrap">
+                  <table>
+                    <thead>
+                      <tr><th>設計挑戰</th><th>技術對應</th><th>體驗目標</th></tr>
+                    </thead>
+                    <tbody>
+                      <tr><td>資料量龐大</td><td>摘要 API、快取與分頁載入</td><td>快速掌握重點，不被資訊淹沒</td></tr>
+                      <tr><td>授權流程複雜</td><td>OAuth、權限分層與重新授權</td><td>清楚理解資料使用範圍</td></tr>
+                      <tr><td>異常狀態頻繁</td><td>錯誤分類、retry 與狀態紀錄</td><td>讓使用者知道問題與下一步</td></tr>
+                      <tr><td>資安信任不足</td><td>操作紀錄、撤銷授權、登入提醒</td><td>建立可控感與安全感</td></tr>
+                    </tbody>
+                  </table>
+                </div>
+              </section>
+              <section>
+                <h2>AI 可以協助辨識異常與摘要資訊</h2>
+                <p>AI 能協助整理消費趨勢、偵測異常交易與摘要財務狀態，但它的判斷必須被清楚解釋。AI 應該輔助理解，而不是替使用者做不可逆決策。</p>
               </section>
 
             <blockquote>
               <p>金融介面最重要的不是把資料塞滿，而是讓使用者能相信自己看到的每一個狀態。</p>
             </blockquote>
+            <p>金融 App 的設計是一場信任工程。當資料呈現、後端架構與介面回饋能彼此配合，使用者才會願意把重要的財務決策交給產品協助。</p>
             <footer class="article-footer-actions" aria-label="文章互動資訊">
               <div class="article-stats">
                 <span>110 views</span>

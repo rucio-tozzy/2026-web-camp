@@ -36,7 +36,7 @@
             <span aria-hidden="true"></span>
             <a href="./blog.html">部落格</a>
             <span aria-hidden="true"></span>
-            <span>部落格標題</span>
+            <span>10 年職人手記：如何運用 Figma 與 Storybook 打造美感與邏輯兼具的企業級設計系統</span>
           </nav>
         </div>
       </div>
@@ -45,40 +45,57 @@
         <div class="container article-hero__inner">
           <div class="article-kicker">
           <ul class="article-tags" aria-label="文章標籤"><li>UIUX 設計</li><li>設計規範</li><li>前端技術</li></ul>
-            <time datetime="2022-10-16">Oct 16, 2022</time>
+            <time datetime="2022-10-15">Oct 15, 2022</time>
           </div>
           <h1>10 年職人手記：如何運用 Figma 與 Storybook 打造美感與邏輯兼具的企業級設計系統</h1>
           <p class="lead">設計系統讓設計語言、工程元件與團隊協作有共同標準，降低跨部門溝通成本。</p>
-          <p>當設計系統從靜態設計稿進入真實產品，Figma 與 Storybook 會成為設計與工程之間最重要的共同語言。本文整理建立企業級設計系統時的關鍵順序，讓元件、狀態與文件能長期維持一致。</p>
+          <p>設計系統真正困難的地方，不是做出漂亮的元件庫，而是讓它在團隊日常中持續被使用。Figma 和 Storybook 的搭配，能讓視覺規格、工程狀態與協作文件保持在同一條線上。</p>
         </div>
       </header>
 
       <div class="container article-container">
           <div class="article-content article-body" data-aos="fade-up" data-aos-delay="120">
               <section>
-                <h2>先定義設計 token，再整理元件</h2>
-                <p>顏色、字級、間距、圓角與陰影應該先被抽象成 token。當 token 穩定後，按鈕、輸入框、卡片與導覽列等元件才能維持一致的視覺語言。</p>
+                <h2>先定義 token，再討論元件</h2>
+                <p>很多團隊一開始急著整理 Button、Card、Modal，卻忽略顏色、字級、間距與狀態這些基礎規則。先把 token 命名清楚，元件才不會在實作時長出一堆例外。</p>
               </section>
               <figure class="article-inline-image">
-                <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2026-web-camp/blog_content_1.png" alt="設計工作流與介面規劃示意圖">
-                <figcaption>將概念、內容與設計規格整理成團隊能理解的介面流程，是跨領域協作的關鍵。</figcaption>
+                <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2026-web-camp/blog_2.png" alt="設計系統與生活物件視覺示意圖">
+                <figcaption>設計系統要同時服務視覺品質與開發效率，不能只偏向其中一邊。</figcaption>
               </figure>
               <section>
-                <h2>Figma 管理設計狀態</h2>
-                <p>設計稿需要整理元件變體、狀態與 RWD 規則。工程師接手時，才能清楚知道 hover、disabled、focus 與 error 狀態該如何呈現。</p>
+                <h2>Figma 負責視覺語言，Storybook 負責真實狀態</h2>
+                <p>Figma 適合定義元件外觀和使用情境，但產品裡還會遇到長文字、空資料、載入中、錯誤與 disabled 等狀態。Storybook 能把這些狀態變成可互動文件，讓討論更接近真實產品。</p>
               </section>
-              <figure class="article-inline-image">
-                <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2026-web-camp/blog_content_2.png" alt="前端開發與視覺設計協作示意圖">
-                <figcaption>把元件狀態、互動規則與 RWD 檢查流程文件化，可以讓交付更穩定。</figcaption>
-              </figure>
               <section>
-                <h2>Storybook 補足工程文件</h2>
-                <p>Storybook 可以讓前端元件被獨立檢視、測試與記錄。當設計師與工程師都能看到相同的元件狀態，設計系統就更容易被長期維護。</p>
+                <h2>命名規則決定維護成本</h2>
+                <p>顏色不應只叫 orange 或 gray，而應對應 primary、neutral、danger 等語意。文字階層也應用 display、heading、paragraph、label 這類用途命名，讓設計稿和 class 更容易對齊。</p>
+              </section>
+              <section>
+                <h2>設計系統分層交付對照表</h2>
+                <div class="article-table-wrap">
+                  <table>
+                    <thead>
+                      <tr><th>系統層級</th><th>主要工具</th><th>交付重點</th></tr>
+                    </thead>
+                    <tbody>
+                      <tr><td>Design Tokens</td><td>Figma Variables / CSS Variables</td><td>色彩、字級、間距與陰影命名</td></tr>
+                      <tr><td>Components</td><td>Figma Components / HTML 組件</td><td>可重用元件與互動狀態</td></tr>
+                      <tr><td>Documentation</td><td>Storybook / 使用規範</td><td>使用情境、限制與狀態展示</td></tr>
+                      <tr><td>Governance</td><td>Review 流程</td><td>新增、修改與淘汰規則</td></tr>
+                    </tbody>
+                  </table>
+                </div>
+              </section>
+              <section>
+                <h2>文件化不是額外工作，而是交付的一部分</h2>
+                <p>企業級設計系統需要清楚說明何時使用、何時避免，以及元件有哪些可調整屬性。這些文件能讓新成員快速進入狀況，也能降低跨團隊溝通成本。</p>
               </section>
 
             <blockquote>
               <p>設計系統不是把畫面做整齊，而是讓團隊在不同需求中仍然能做出一致決策。</p>
             </blockquote>
+            <p>設計系統不會第一次就完美。它需要被真實專案反覆驗證，再從使用情境中修正。當設計與工程共同維護它，它才會成為產品長期成長的基礎。</p>
             <footer class="article-footer-actions" aria-label="文章互動資訊">
               <div class="article-stats">
                 <span>110 views</span>
