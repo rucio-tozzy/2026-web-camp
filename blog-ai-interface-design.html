@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
   <link rel="stylesheet" href="./css/style.css">
 </head>
-<body>
+<body class="article-detail-template">
   <header class="site-header">
     <div class="container header-inner">
       <a class="logo" href="./index.html" aria-label="回首頁">Nelson</a>
@@ -29,93 +29,87 @@
 
   <main>
     <article class="article-page">
-      <header class="article-hero" data-aos="fade-up">
-        <div class="container article-hero__inner">
+      <div class="breadcrumb-bar">
+        <div class="container">
           <nav class="breadcrumb" aria-label="麵包屑">
             <a href="./index.html">首頁</a>
-            <span>/</span>
+            <span aria-hidden="true"></span>
             <a href="./blog.html">部落格</a>
-            <span>/</span>
-            <span>文章內容</span>
+            <span aria-hidden="true"></span>
+            <span>部落格標題</span>
           </nav>
+        </div>
+      </div>
+
+      <header class="article-hero" data-aos="fade-up">
+        <div class="container article-hero__inner">
+          <div class="article-kicker">
           <ul class="article-tags" aria-label="文章標籤"><li>UIUX 設計</li><li>前端技術</li><li>AI 趨勢應用</li></ul>
+            <time datetime="2022-10-16">Oct 16, 2022</time>
+          </div>
           <h1>當 AI 遇上介面設計：資深設計師如何利用生成式工具重塑前端開發工作流與視覺想像力</h1>
           <p class="lead">從像素到程式碼，探討 AI 如何成為數位職人的最強外掛，在美學與邏輯的交界處創造全新價值。</p>
-          <div class="blog-meta article-meta">
-            <span>Oct 16, 2022</span>
-            <span>visibility 110 views</span>
-            <span>share 2 shares</span>
-          </div>
+          <p>在跨入 UIUX 與前端領域的第十年，我見證了無數技術更迭，但 AI 的出現無疑是最具衝擊性的一場革命。本文將深度解析資深設計師如何將生成式 AI 整合進現有工作流，透過 AI 釋放視覺想像力，並利用智慧化工具優化前端開發效率，實踐美學與技術的完美共生。</p>
         </div>
       </header>
 
       <div class="container article-container">
-        <figure class="article-cover" data-aos="fade-up">
-          <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2026-web-camp/blog_4.png" alt="當 AI 遇上介面設計：資深設計師如何利用生成式工具重塑前端開發工作流與視覺想像力 文章封面圖片">
-        </figure>
-
-        <div class="article-layout">
-          <aside class="article-sidebar" data-aos="fade-up">
-            <a class="back-link" href="./blog.html">← 回文章列表</a>
-            <div class="article-toc">
-              <p class="eyebrow">ARTICLE</p>
-              <p>從像素到程式碼，探討 AI 如何成為數位職人的最強外掛，在美學與邏輯的交界處創造全新價值。</p>
-            </div>
-            <div class="article-share">
-              <p class="eyebrow">SHARE</p>
-              <p>分享　share</p>
-            </div>
-          </aside>
-
-          <div class="article-content" data-aos="fade-up" data-aos-delay="120">
-            <p class="lead">從像素到程式碼，探討 AI 如何成為數位職人的最強外掛，在美學與邏輯的交界處創造全新價值。</p>
+          <div class="article-content article-body" data-aos="fade-up" data-aos-delay="120">
               <section>
                 <h2>視覺想像力的無限延伸：從 Moodboard 到驚艷視覺</h2>
-                <p>以往在發想專案視覺風格時，常常受限於素材搜尋的時間與腦中畫面的模糊程度。現在透過生成式工具，設計師可以在短時間內得到多組視覺方向，再用品牌定位、使用者情境與商業目標進行篩選。AI 不是取代審美，而是把設計師從重複的草稿執行中釋放出來，讓人更專注於判斷與策展。</p>
+                <p>以往在發想專案視覺風格時，往往受限於素材搜尋的耗時或手繪草圖的限制。現在，透過 Midjourney 或 DALL-E 等工具，我能在幾分鐘內產出數十種具備極致美感的配色方案與佈局可能性。這並非取代設計師的審美，而是將我們從繁瑣的執行工作中解放，轉而擔任「視覺策展人」的角色，從龐大的 AI 提案中精煉出最契合品牌魂魄的視覺語言。</p>
               </section>
               <figure class="article-inline-image">
                 <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2026-web-camp/blog_content_1.png" alt="設計工作流與介面規劃示意圖">
-                <figcaption>將概念、內容與設計規格整理成團隊能理解的介面流程，是跨領域協作的關鍵。</figcaption>
+                <figcaption>利用 AI 快速生成的品牌視覺概念圖，能有效縮短與客戶在初期的溝通成本。</figcaption>
               </figure>
+              <blockquote>
+                <p>AI 不會取代設計師，但那些懂得與 AI 協作的人，將會定義下一個世代的設計標準</p>
+              </blockquote>
               <section>
                 <h2>工作流的重塑：當設計稿與程式碼無縫銜接</h2>
-                <p>前端工程師最常遇到的挑戰，是把設計稿中看似簡單的畫面精準轉譯為可維護的程式碼。AI 能先協助產出 HTML 結構、CSS Grid 配置、RWD 斷點與元件狀態草稿，再由工程師檢查語意、效能、可讀性與跨瀏覽器細節。這種工作流讓設計與工程之間不再是單向交付，而是更快速的共同迭代。</p>
+                <p>身為前端工程師，最挑戰的環節往往是將精美的設計稿「精準轉譯」為流暢的程式碼。AI 的介入讓這個轉譯過程變得前所未有的流暢。無論是自動產生複雜的 CSS 佈局、建構 React 元件邏輯，還是優化響應式斷點，AI 就像是一位全天候待命的技術助理，讓我們能將精力集中在更高維度的互動體驗設計與產品效能優化。</p>
               </section>
               <figure class="article-inline-image">
                 <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2026-web-camp/blog_content_2.png" alt="前端開發與視覺設計協作示意圖">
-                <figcaption>把元件狀態、互動規則與 RWD 檢查流程文件化，可以讓交付更穩定。</figcaption>
+                <figcaption>AI 輔助生成的 Clean Code 結構，顯著提升開發整潔深度。</figcaption>
               </figure>
               <section>
                 <h2>跨領域利器：精選 AI 工具的實戰應用對比</h2>
-                <p>不同 AI 工具適合不同情境。視覺探索適合使用影像生成工具；UI 規劃可結合 Figma AI 與設計系統；程式開發則可使用 Copilot 或大型語言模型協助切版、整理資料結構與檢查 RWD 風險。重點不是工具越多越好，而是把工具放進可重複的流程中。</p>
-              </section>
-              <section>
-                <h2>建立團隊可複用的 Prompt 流程</h2>
-                <p>實務上可以把常用需求整理成提示詞模板，例如「請依照現有 HTML 檢查可能造成水平捲軸的元素」、「依照這份卡片樣式延伸 hover 與 focus 狀態」、「把手機版改成一欄並保持圖片比例」。當提示詞與檢查清單被文件化，團隊就能穩定地把 AI 變成日常協作的一部分。</p>
+                <p>在數位職人的工具箱中，選擇正確的武器至關重要。為了讓大家在開發與設計的混合戰場中更具效率，我整理了一份實戰應用對比表。這份表格不僅是基於工具的功能，更是從我這十年的實務經驗出發，評估各項工具在實際專案中的落地價值與學習門檻，協助你快速找到最適合自己的 AI 隊友。</p>
               </section>
 
               <section>
                 <h2>2026 數位職人必備 AI 工具效能對比表</h2>
-                <p>選擇工具時，不只看功能多寡，也要評估它能否放進實際團隊流程中。</p>
                 <div class="article-table-wrap">
                   <table>
                     <thead>
                       <tr><th>工具名稱</th><th>應用範疇</th><th>核心優勢</th><th>學習曲線</th></tr>
                     </thead>
                     <tbody>
-                      <tr><td>Midjourney</td><td>視覺構思</td><td>適合風格探索與氛圍圖生成</td><td>中高</td></tr>
-                      <tr><td>Figma AI</td><td>UI 設計</td><td>整合於設計稿，快速生成組件與圖表</td><td>低</td></tr>
-                      <tr><td>GitHub Copilot</td><td>程式開發</td><td>減少重複性標籤與邏輯撰寫</td><td>中</td></tr>
-                      <tr><td>Claude / ChatGPT</td><td>程式邏輯</td><td>能整理流程、檢查結構與協助 debug</td><td>中</td></tr>
+                      <tr><td>Midjourney</td><td>視覺構思</td><td>創意發想極致，適合風格探索與氛圍圖生成</td><td>中高</td></tr>
+                      <tr><td>Figma AI</td><td>UI 設計</td><td>直接整合於設計稿，快速生成組件與圖表</td><td>低</td></tr>
+                      <tr><td>GitHub Copilot</td><td>程式開發</td><td>邏輯代碼預測準確，減少重複性標籤撰寫</td><td>中</td></tr>
+                      <tr><td>Claude</td><td>程式邏輯</td><td>具備強大文脈理解力，能優化複雜的用戶流程</td><td>中</td></tr>
                     </tbody>
                   </table>
                 </div>
               </section>
-            <blockquote>
-              <p>AI 不會取代設計師，但懂得用 AI 協作的人，會重新定義下一個世代的設計工作標準。</p>
-            </blockquote>
+            <hr>
+            <p>AI 的崛起並非數位職涯的終點，而是另一個高峰的起點。對於喜歡把美學與程式結合的我們來說，這是一個最好的時代。AI 給了我們更強大的雙翼，讓我們能飛得更高、看見更遠的設計地平線。保持好奇心，持續優化你的 Prompt，讓技術為藝術服務，創造出更多令人驚艷的作品。</p>
+            <footer class="article-footer-actions" aria-label="文章互動資訊">
+              <div class="article-stats">
+                <span>110 views</span>
+                <span>2 shares</span>
+              </div>
+              <div class="article-share-actions">
+                <span>分享</span>
+                <a href="#" aria-label="分享文章">share</a>
+                <a href="#" aria-label="分享到 Instagram">IG</a>
+                <a href="#" aria-label="分享到 Line">LINE</a>
+              </div>
+            </footer>
           </div>
-        </div>
       </div>
     </article>
 
@@ -123,31 +117,30 @@
       <div class="container">
         <div class="section-heading section-heading--split">
           <div>
-            <p class="eyebrow">RELATED BLOG</p>
-            <h2 id="related-title">相關文章</h2>
+            <p class="eyebrow">相關文章</p>
+            <h2 id="related-title">RELATED BLOG</h2>
           </div>
-          <a class="text-link" href="./blog.html">回文章列表 →</a>
         </div>
         <div class="blog-grid blog-grid--preview">
-          <a class="blog-card" href="./blog-micro-interactions.html" data-aos="fade-up">
-            <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2026-web-camp/blog_1.png" alt="網頁裡的微互動藝術：利用 CSS 與 JS 動畫為諮詢網站注入靈魂並提升用戶轉化率 文章圖片">
-            <div class="blog-card__body">
-              <p class="tagline">UIUX 設計 ・ 網頁設計 ・ 前端技術</p>
-              <h3>網頁裡的微互動藝術：利用 CSS 與 JS 動畫為諮詢網站注入靈魂並提升用戶轉化率</h3>
-              <p class="meta">Oct 16, 2022　110 views　2 shares</p>
-            </div>
-          </a>          <a class="blog-card" href="./blog-figma-storybook.html" data-aos="fade-up" data-aos-delay="80">
+          <a class="blog-card" href="./blog-figma-storybook.html" data-aos="fade-up">
             <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2026-web-camp/blog_2.png" alt="10 年職人手記：如何運用 Figma 與 Storybook 打造美感與邏輯兼具的企業級設計系統 文章圖片">
             <div class="blog-card__body">
               <p class="tagline">UIUX 設計 ・ 設計規範 ・ 前端技術</p>
-              <h3>10 年職人手記：如何運用 Figma 與 Storybook 打造美感與邏輯兼具的企業級設計系統</h3>
+              <h3>10年職人手記：如何運用 Figma 與 Storybook 打造美感與邏輯兼具的企業級設計系統</h3>
               <p class="meta">Oct 16, 2022　110 views　2 shares</p>
             </div>
-          </a>          <a class="blog-card" href="./blog-brand-visual.html" data-aos="fade-up" data-aos-delay="160">
+          </a>          <a class="blog-card" href="./blog-brand-visual.html" data-aos="fade-up" data-aos-delay="80">
             <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2026-web-camp/blog_3.png" alt="從平面識別到數位體驗：以「植感生活」為例，探討跨媒體品牌視覺在網頁上的精準轉譯 文章圖片">
             <div class="blog-card__body">
               <p class="tagline">品牌設計 ・ 平面設計 ・ UIUX 設計</p>
               <h3>從平面識別到數位體驗：以「植感生活」為例，探討跨媒體品牌視覺在網頁上的精準轉譯</h3>
+              <p class="meta">Oct 16, 2022　110 views　2 shares</p>
+            </div>
+          </a>          <a class="blog-card" href="./blog-fintech-api.html" data-aos="fade-up" data-aos-delay="160">
+            <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2026-web-camp/blog_5.png" alt="揭開金融 App 的設計密碼：如何優化 Open Bank API 的複雜數據呈現與後端串接安全性 文章圖片">
+            <div class="blog-card__body">
+              <p class="tagline">前端技術 ・ 後端架構 ・ AI 趨勢應用</p>
+              <h3>揭開金融 App 的設計密碼：如何優化 Open Bank API 的複雜數據呈現與後端串接安全性</h3>
               <p class="meta">Oct 16, 2022　110 views　2 shares</p>
             </div>
           </a>

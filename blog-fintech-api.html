@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
   <link rel="stylesheet" href="./css/style.css">
 </head>
-<body>
+<body class="article-detail-template">
   <header class="site-header">
     <div class="container header-inner">
       <a class="logo" href="./index.html" aria-label="回首頁">Nelson</a>
@@ -29,46 +29,32 @@
 
   <main>
     <article class="article-page">
-      <header class="article-hero" data-aos="fade-up">
-        <div class="container article-hero__inner">
+      <div class="breadcrumb-bar">
+        <div class="container">
           <nav class="breadcrumb" aria-label="麵包屑">
             <a href="./index.html">首頁</a>
-            <span>/</span>
+            <span aria-hidden="true"></span>
             <a href="./blog.html">部落格</a>
-            <span>/</span>
-            <span>文章內容</span>
+            <span aria-hidden="true"></span>
+            <span>部落格標題</span>
           </nav>
+        </div>
+      </div>
+
+      <header class="article-hero" data-aos="fade-up">
+        <div class="container article-hero__inner">
+          <div class="article-kicker">
           <ul class="article-tags" aria-label="文章標籤"><li>前端技術</li><li>後端架構</li><li>AI 趨勢應用</li></ul>
+            <time datetime="2022-10-16">Oct 16, 2022</time>
+          </div>
           <h1>揭開金融 App 的設計密碼：如何優化 Open Bank API 的複雜數據呈現與後端串接安全性</h1>
           <p class="lead">金融產品介面需要同時處理資料可信度、狀態提示、錯誤回饋與後端串接安全性。</p>
-          <div class="blog-meta article-meta">
-            <span>Oct 16, 2022</span>
-            <span>visibility 110 views</span>
-            <span>share 2 shares</span>
-          </div>
+          <p>金融 App 的設計核心不只是漂亮的圖表，而是讓使用者理解資料來源、同步狀態與安全風險。本文從 Open Bank API 的資料呈現與後端串接情境出發，整理金融介面如何建立透明且可信任的操作體驗。</p>
         </div>
       </header>
 
       <div class="container article-container">
-        <figure class="article-cover" data-aos="fade-up">
-          <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2026-web-camp/blog_5.png" alt="揭開金融 App 的設計密碼：如何優化 Open Bank API 的複雜數據呈現與後端串接安全性 文章封面圖片">
-        </figure>
-
-        <div class="article-layout">
-          <aside class="article-sidebar" data-aos="fade-up">
-            <a class="back-link" href="./blog.html">← 回文章列表</a>
-            <div class="article-toc">
-              <p class="eyebrow">ARTICLE</p>
-              <p>金融產品介面需要同時處理資料可信度、狀態提示、錯誤回饋與後端串接安全性。</p>
-            </div>
-            <div class="article-share">
-              <p class="eyebrow">SHARE</p>
-              <p>分享　share</p>
-            </div>
-          </aside>
-
-          <div class="article-content" data-aos="fade-up" data-aos-delay="120">
-            <p class="lead">金融產品介面需要同時處理資料可信度、狀態提示、錯誤回饋與後端串接安全性。</p>
+          <div class="article-content article-body" data-aos="fade-up" data-aos-delay="120">
               <section>
                 <h2>複雜資料需要清楚的分層</h2>
                 <p>金融 App 需要顯示帳戶、交易、分類、授權與同步狀態。設計時應先建立資訊層級，讓使用者先看到總覽，再深入查看細節。</p>
@@ -93,8 +79,19 @@
             <blockquote>
               <p>金融介面最重要的不是把資料塞滿，而是讓使用者能相信自己看到的每一個狀態。</p>
             </blockquote>
+            <footer class="article-footer-actions" aria-label="文章互動資訊">
+              <div class="article-stats">
+                <span>110 views</span>
+                <span>2 shares</span>
+              </div>
+              <div class="article-share-actions">
+                <span>分享</span>
+                <a href="#" aria-label="分享文章">share</a>
+                <a href="#" aria-label="分享到 Instagram">IG</a>
+                <a href="#" aria-label="分享到 Line">LINE</a>
+              </div>
+            </footer>
           </div>
-        </div>
       </div>
     </article>
 
@@ -102,10 +99,9 @@
       <div class="container">
         <div class="section-heading section-heading--split">
           <div>
-            <p class="eyebrow">RELATED BLOG</p>
-            <h2 id="related-title">相關文章</h2>
+            <p class="eyebrow">相關文章</p>
+            <h2 id="related-title">RELATED BLOG</h2>
           </div>
-          <a class="text-link" href="./blog.html">回文章列表 →</a>
         </div>
         <div class="blog-grid blog-grid--preview">
           <a class="blog-card" href="./blog-micro-interactions.html" data-aos="fade-up">
