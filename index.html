@@ -19,32 +19,37 @@
         <span></span>
       </button>
       <nav id="primary-nav" class="primary-nav" aria-label="主要導覽">
-        <a class="active" href="./index.html">首頁</a>
         <a href="./service.html">服務項目</a>
         <a href="./projects.html">專案作品</a>
         <a href="./blog.html">部落格</a>
+        <a href="#contact">與我聯絡</a>
       </nav>
     </div>
   </header>
 
   <main>
-    <section class="home-hero section-soft">
-      <div class="container home-hero__inner">
+    <section class="home-hero" aria-labelledby="home-hero-title">
+      <div class="home-hero__inner">
         <div class="home-hero__content" data-aos="fade-up">
-          <p class="eyebrow">HELLO</p>
-          <h1>I'm Nelson</h1>
-          <p class="lead">專注於品牌網頁設計、使用者體驗優化與流暢的前端切版開發，用程式將視覺轉化為直覺的數位體驗。</p>
-          <div class="button-group">
-            <a class="btn btn-primary" href="./projects.html">作品集</a>
-            <a class="btn btn-outline" href="#contact">聯絡我</a>
+          <h1 id="home-hero-title"><span>Hello</span><span>I'm Nelson</span></h1>
+          <p class="home-hero__intro">我是一個擁有 10 年經驗的 UIUX 設計師 和 前端工程師<br>喜歡把美學和程式結合，打造一個又一個精美的網頁設計！</p>
+          <div class="button-group hero-buttons">
+            <a class="btn btn-primary" href="#contact">與我聯絡</a>
+            <a class="btn btn-outline" href="#service-title">我的履歷</a>
           </div>
         </div>
-        <div class="home-hero__media" data-aos="zoom-in" data-aos-delay="120">
-          <img class="hero-person float-y" src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2026-web-camp/index_person.png" alt="Nelson 個人形象照">
-          <img class="decora decora-1" src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2026-web-camp/index_decora_1.png" alt="" aria-hidden="true">
-          <img class="decora decora-2" src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2026-web-camp/index_decora_2.png" alt="" aria-hidden="true">
-          <img class="decora decora-3" src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2026-web-camp/index_decora_3.png" alt="" aria-hidden="true">
+
+        <div class="home-hero__media" aria-hidden="true">
+          <img class="hero-person" src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2026-web-camp/index_person.png" alt="">
         </div>
+
+        <img class="hero-decoration hero-decoration--flower-left" src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2026-web-camp/index_decora_3.png" alt="" aria-hidden="true">
+        <img class="hero-decoration hero-decoration--line-top" src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2026-web-camp/index_decora_4.png" alt="" aria-hidden="true">
+        <img class="hero-decoration hero-decoration--flower-center" src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2026-web-camp/index_decora_3.png" alt="" aria-hidden="true">
+        <img class="hero-decoration hero-decoration--line-bottom" src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2026-web-camp/index_decora_5.png" alt="" aria-hidden="true">
+        <img class="hero-decoration hero-decoration--blob-main" src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2026-web-camp/index_decora_1.png" alt="" aria-hidden="true">
+        <img class="hero-decoration hero-decoration--flower-right" src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2026-web-camp/index_decora_3.png" alt="" aria-hidden="true">
+        <img class="hero-decoration hero-decoration--blob-bottom" src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2026-web-camp/index_decora_2.png" alt="" aria-hidden="true">
       </div>
     </section>
 
@@ -92,32 +97,62 @@
           </div>
           <a class="text-link" href="./projects.html">查看更多作品 →</a>
         </div>
-        <article class="featured-project" data-aos="fade-up">
+        <article class="featured-project shine-card" data-aos="fade-up">
           <div class="featured-project__content">
             <p class="meta">Oct 16, 2025　平面設計．網頁設計</p>
             <h3>品牌視覺與電商整合，多肉植物品牌電商建置</h3>
             <p>從品牌識別設計到 RWD 網站開發，打造療癒系植栽購物體驗。</p>
-            <a class="btn btn-primary" href="./projects.html">前往專案</a>
+            <a class="btn btn-primary" href="./projects.html?project=plantique">前往專案</a>
           </div>
           <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2026-web-camp/project_1.png" alt="多肉植物品牌電商專案畫面">
         </article>
         <div class="project-grid project-grid--preview">
-          <article class="project-card" data-aos="fade-up">
-            <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2026-web-camp/project_2.png" alt="數位金融 App 介面設計">
-            <div class="project-card__body">
-              <p class="meta">2026 APP DESIGN</p>
-              <h3>數位金融 App 介面設計</h3>
-              <p>化繁為簡的資產管理介面，提供使用者流暢、直覺的操作體驗。</p>
-              <a href="./projects.html">MORE →</a>
+                    <article class="project-card project-card--large shine-card" data-aos="fade-up">
+            <div class="project-card__image-wrap">
+              <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2026-web-camp/project_2.png" alt="數位產品 UI/UX 設計，個人化財務視覺化軟體 專案圖片">
+              <span class="project-card__badge">Oct 16, 2025</span>
+            </div>
+            <div class="project-card__body project-card__body--large">
+              <ul class="project-tags" aria-label="專案標籤">
+                <li>網頁設計</li><li>前端切版</li>
+              </ul>
+              <h3>數位產品 UI/UX 設計，個人化財務視覺化軟體</h3>
+              <p>運用數據視覺化邏輯，將複雜的財務數據轉化為直覺操作介面。</p>
+              <div class="project-card__actions">
+                <a class="btn btn-primary" href="./projects.html?project=finance">前往專案</a>
+              </div>
             </div>
           </article>
-          <article class="project-card" data-aos="fade-up" data-aos-delay="120">
-            <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2026-web-camp/project_3.png" alt="法式甜點品牌視覺重塑">
-            <div class="project-card__body">
-              <p class="meta">2026 BRAND DESIGN</p>
-              <h3>法式甜點品牌視覺重塑</h3>
-              <p>品牌識別與包裝設計，重塑優雅浪漫的經典法式視覺體系。</p>
-              <a href="./projects.html">MORE →</a>
+                    <article class="project-card project-card--large shine-card" data-aos="fade-up" data-aos-delay="120">
+            <div class="project-card__image-wrap">
+              <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2026-web-camp/project_3.png" alt="品牌識別與包裝設計，法式甜點品牌視覺重塑 專案圖片">
+              <span class="project-card__badge">Oct 16, 2025</span>
+            </div>
+            <div class="project-card__body project-card__body--large">
+              <ul class="project-tags" aria-label="專案標籤">
+                <li>平面設計</li>
+              </ul>
+              <h3>品牌識別與包裝設計，法式甜點品牌視覺重塑</h3>
+              <p>以溫暖、輕盈的視覺語言，精準定位高質感甜點市場的品牌形象。</p>
+              <div class="project-card__actions">
+                <a class="btn btn-primary" href="./projects.html?project=patisserie">前往專案</a>
+              </div>
+            </div>
+          </article>
+                    <article class="project-card project-card--large shine-card" data-aos="fade-up" data-aos-delay="240">
+            <div class="project-card__image-wrap">
+              <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2026-web-camp/project_4.png" alt="金融科技系統設計，Open Bank API 數據整合平台 專案圖片">
+              <span class="project-card__badge">Oct 16, 2025</span>
+            </div>
+            <div class="project-card__body project-card__body--large">
+              <ul class="project-tags" aria-label="專案標籤">
+                <li>網頁設計</li><li>前端切版</li><li>後端開發</li>
+              </ul>
+              <h3>金融科技系統設計，Open Bank API 數據整合平台</h3>
+              <p>串接第三方 API 並規劃穩定後端架構，建構安全的資產管理後台。</p>
+              <div class="project-card__actions">
+                <a class="btn btn-primary" href="./projects.html?project=openbank">前往專案</a>
+              </div>
             </div>
           </article>
         </div>
@@ -135,7 +170,7 @@
         </div>
         <div class="blog-grid blog-grid--preview">
           <a class="blog-card" href="./blog-figma-storybook.html" data-aos="fade-up">
-            <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2026-web-camp/blog_2.png" alt="Figma 與 Storybook 設計系統文章圖片">
+            <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2026-web-camp/blog_2.png" alt="10 年職人手記：如何運用 Figma 與 Storybook 打造美感與邏輯兼具的企業級設計系統 文章圖片">
             <div class="blog-card__body">
               <p class="tagline">UIUX 設計 ・ 設計規範 ・ 前端技術</p>
               <h3>10 年職人手記：如何運用 Figma 與 Storybook 打造美感與邏輯兼具的企業級設計系統</h3>
@@ -143,7 +178,7 @@
             </div>
           </a>
           <a class="blog-card" href="./blog-brand-visual.html" data-aos="fade-up" data-aos-delay="100">
-            <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2026-web-camp/blog_3.png" alt="植感生活品牌視覺文章圖片">
+            <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2026-web-camp/blog_3.png" alt="從平面識別到數位體驗：以「植感生活」為例，探討跨媒體品牌視覺在網頁上的精準轉譯 文章圖片">
             <div class="blog-card__body">
               <p class="tagline">品牌設計 ・ 平面設計 ・ UIUX 設計</p>
               <h3>從平面識別到數位體驗：以「植感生活」為例，探討跨媒體品牌視覺在網頁上的精準轉譯</h3>
@@ -151,7 +186,7 @@
             </div>
           </a>
           <a class="blog-card" href="./blog-ai-interface-design.html" data-aos="fade-up" data-aos-delay="200">
-            <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2026-web-camp/blog_4.png" alt="AI 介面設計文章圖片">
+            <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2026-web-camp/blog_4.png" alt="當 AI 遇上介面設計：資深設計師如何利用生成式工具重塑前端開發工作流與視覺想像力 文章圖片">
             <div class="blog-card__body">
               <p class="tagline">UIUX 設計 ・ 前端技術 ・ AI 趨勢應用</p>
               <h3>當 AI 遇上介面設計：資深設計師如何利用生成式工具重塑前端開發工作流與視覺想像力</h3>
@@ -165,13 +200,13 @@
     <section class="subscription" aria-labelledby="subscription-title" data-aos="fade-up">
       <div class="container subscription__inner">
         <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2026-web-camp/subscription.png" alt="電子報訂閱插圖">
-        <div>
-          <p class="eyebrow">NEWSLETTER</p>
-          <h2 id="subscription-title">電子報訂閱</h2>
+        <div class="subscription__content">
+          <p class="subscription__kicker">電子報訂閱</p>
+          <h2 id="subscription-title">SUBSCRIPTION</h2>
           <p>你也在追求設計美感與技術落地的完美平衡嗎？訂閱電子報，我會分享前端學習、AI 工具與職涯成長的實戰心得。</p>
           <form class="inline-form">
-            <label class="sr-only" for="home-email">電子信箱</label>
-            <input id="home-email" type="email" placeholder="請輸入 email" required>
+            <label class="sr-only" for="home-subscribe-email">電子信箱</label>
+            <input id="home-subscribe-email" type="email" placeholder="電子信箱" required>
             <button class="btn btn-primary" type="submit">送出</button>
           </form>
         </div>
@@ -184,18 +219,23 @@
       <div data-aos="fade-up">
         <p class="eyebrow">CONTACT</p>
         <h2>與我聯絡</h2>
-        <p>若有數位商品設計和服務相關問題，歡迎填寫表單或直接與我聯絡！</p>
+        <p>若有數位產品設計、前端切版或後端架構相關問題，歡迎填寫表單或直接與我聯絡！</p>
         <div class="social-links" aria-label="社群連結">
           <a href="#">IG</a>
           <a href="#">LINE</a>
           <a href="#">IN</a>
+          <a href="#">GH</a>
         </div>
         <a class="mail-link" href="mailto:service@hexschool.com">service@hexschool.com</a>
       </div>
       <form class="contact-form" data-aos="fade-up" data-aos-delay="120">
         <label for="home-name">姓名</label>
         <input id="home-name" type="text" placeholder="請輸入姓名" required>
-        <label for="home-message">需求說明</label>
+        <label for="home-phone">手機號碼</label>
+        <input id="home-phone" type="tel" placeholder="請輸入手機號碼">
+        <label for="home-email">電子信箱</label>
+        <input id="home-email" type="email" placeholder="請輸入電子信箱" required>
+        <label for="home-message">備註</label>
         <textarea id="home-message" rows="5" placeholder="請簡短描述你的需求" required></textarea>
         <button class="btn btn-light" type="submit">送出</button>
       </form>
