@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>部落格｜Nelson</title>
+  <meta name="description" content="Nelson 部落格，分享 UIUX 設計、網頁設計、前端技術、後端架構與 AI 趨勢應用。">
+  <link rel="preconnect" href="https://raw.githubusercontent.com">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="./blog.html" aria-label="回首頁">Nelson</a>
+      <button class="menu-toggle" type="button" aria-label="開啟選單" aria-expanded="false" aria-controls="primary-nav">
+        <span></span><span></span><span></span>
+      </button>
+      <nav id="primary-nav" class="primary-nav" aria-label="主要導覽">
+        <a href="./blog.html">首頁</a>
+        <a href="#">服務項目</a>
+        <a href="#">專案作品</a>
+        <a class="active" href="./blog.html">部落格</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero page-hero--blog">
+      <div class="container page-hero__inner">
+        <p class="eyebrow">BLOGS</p>
+        <h1>部落格</h1>
+        <p>記錄設計、前端、後端與 AI 工具的實戰心得，整理能被重複使用的工作方法。</p>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="blog-list-title">
+      <div class="container blog-layout">
+        <aside class="category-panel">
+          <h2 id="blog-list-title">文章分類</h2>
+          <div class="filter-list filter-list--vertical" role="list" aria-label="文章分類">
+            <button class="is-active" type="button" data-filter="all">全部</button>
+            <button type="button" data-filter="brand">品牌設計</button>
+            <button type="button" data-filter="graphic">平面設計</button>
+            <button type="button" data-filter="uiux">UIUX 設計</button>
+            <button type="button" data-filter="web">網頁設計</button>
+            <button type="button" data-filter="system">設計規範</button>
+            <button type="button" data-filter="frontend">前端技術</button>
+            <button type="button" data-filter="backend">後端架構</button>
+            <button type="button" data-filter="ai">AI 趨勢應用</button>
+          </div>
+        </aside>
+
+        <div class="blog-list">
+          <article class="blog-card blog-card--horizontal" data-category="uiux web frontend">
+            <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2026-web-camp/blog_1.png" alt="網頁微互動藝術文章圖片">
+            <div class="blog-card__body">
+              <p class="tagline">UIUX 設計 ・ 網頁設計 ・ 前端技術</p>
+              <h2>網頁裡的微互動藝術：利用 CSS 與 JS 動畫為諮詢網站注入靈魂並提升用戶轉化率</h2>
+              <div class="blog-meta">
+                <span>Oct 16, 2022</span>
+                <span>visibility 110 views</span>
+                <span>share 2 shares</span>
+              </div>
+            </div>
+          </article>
+          <article class="blog-card blog-card--horizontal" data-category="uiux system frontend">
+            <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2026-web-camp/blog_2.png" alt="Figma 與 Storybook 職人手記文章圖片">
+            <div class="blog-card__body">
+              <p class="tagline">UIUX 設計 ・ 設計規範 ・ 前端技術</p>
+              <h2>10 年職人手記：如何運用 Figma 與 Storybook 打造美感與邏輯兼具的企業級設計系統</h2>
+              <div class="blog-meta">
+                <span>Oct 16, 2022</span>
+                <span>visibility 110 views</span>
+                <span>share 2 shares</span>
+              </div>
+            </div>
+          </article>
+          <article class="blog-card blog-card--horizontal" data-category="brand graphic uiux">
+            <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2026-web-camp/blog_3.png" alt="植感生活品牌視覺文章圖片">
+            <div class="blog-card__body">
+              <p class="tagline">品牌設計 ・ 平面設計 ・ UIUX 設計</p>
+              <h2>從平面識別到數位體驗：以「植感生活」為例，探討跨媒體品牌視覺在網頁上的精準轉譯</h2>
+              <div class="blog-meta">
+                <span>Oct 16, 2022</span>
+                <span>visibility 110 views</span>
+                <span>share 2 shares</span>
+              </div>
+            </div>
+          </article>
+          <article class="blog-card blog-card--horizontal" data-category="uiux frontend ai">
+            <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2026-web-camp/blog_4.png" alt="AI 介面設計文章圖片">
+            <div class="blog-card__body">
+              <p class="tagline">UIUX 設計 ・ 前端技術 ・ AI 趨勢應用</p>
+              <h2>當 AI 遇上介面設計：資深設計師如何利用生成式工具重塑前端開發工作流與視覺想像力</h2>
+              <div class="blog-meta">
+                <span>Oct 16, 2022</span>
+                <span>visibility 110 views</span>
+                <span>share 2 shares</span>
+              </div>
+            </div>
+          </article>
+          <article class="blog-card blog-card--horizontal" data-category="frontend backend ai">
+            <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2026-web-camp/blog_5.png" alt="金融 App 設計文章圖片">
+            <div class="blog-card__body">
+              <p class="tagline">前端技術 ・ 後端架構 ・ AI 趨勢應用</p>
+              <h2>揭開金融 App 的設計密碼：如何優化 Open Bank API 的複雜數據呈現與後端串接安全性</h2>
+              <div class="blog-meta">
+                <span>Oct 16, 2022</span>
+                <span>visibility 110 views</span>
+                <span>share 2 shares</span>
+              </div>
+            </div>
+          </article>
+
+          <nav class="pagination" aria-label="分頁導覽">
+            <a class="is-active" href="#">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <span>...</span>
+            <a href="#">20</a>
+          </nav>
+        </div>
+      </div>
+    </section>
+
+    <section class="subscription" aria-labelledby="subscription-title">
+      <div class="container subscription__inner">
+        <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/main/2026-web-camp/subscription.png" alt="電子報訂閱插圖">
+        <div>
+          <p class="eyebrow">NEWSLETTER</p>
+          <h2 id="subscription-title">訂閱電子報</h2>
+          <p>如果你也在追求設計與技術之間的平衡，歡迎訂閱電子報。我會不定期分享前端學習、職涯成長與實戰心得。</p>
+          <form class="inline-form">
+            <label class="sr-only" for="blog-email">電子信箱</label>
+            <input id="blog-email" type="email" placeholder="請輸入 email" required>
+            <button class="btn btn-primary" type="submit">訂閱</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="contact" class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <p class="eyebrow">CONTACT</p>
+        <h2>聯絡我</h2>
+        <p>有任何前端學習、職涯規劃或合作邀約，歡迎透過表單與我聯繫。</p>
+        <p>填寫完表單後，我會盡快回覆你。</p>
+        <div class="social-links" aria-label="社群連結">
+          <a href="#">IG</a><a href="#">LINE</a><a href="#">IN</a>
+        </div>
+        <a class="mail-link" href="mailto:service@hexschool.com">service@hexschool.com</a>
+      </div>
+      <form class="contact-form">
+        <label for="blog-name">姓名</label>
+        <input id="blog-name" type="text" placeholder="請輸入姓名" required>
+        <label for="blog-message">需求說明</label>
+        <textarea id="blog-message" rows="5" placeholder="請簡短描述你的需求" required></textarea>
+        <button class="btn btn-light" type="submit">送出</button>
+      </form>
+    </div>
+  </footer>
+  <script src="./js/main.js"></script>
+</body>
+</html>
