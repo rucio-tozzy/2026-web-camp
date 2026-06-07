@@ -1,11 +1,3 @@
-
-/* 全站移除導圓角：避免任何卡片、按鈕、表單、圖片或第三方樣式產生圓角 */
-*,
-*::before,
-*::after {
-  border-radius: 0 !important;
-}
-
 :root {
   --color-bg: #fbf7f2;
   --color-bg-soft: #f5eadf;
@@ -23,10 +15,10 @@
   --shadow-sm: 0 12px 30px rgba(43, 27, 19, 0.1);
   --shadow-md: 0 22px 58px rgba(43, 27, 19, 0.15);
   --shadow-lg: 0 34px 90px rgba(43, 27, 19, 0.24);
-  --radius-sm: 0px;
-  --radius-md: 0px;
-  --radius-lg: 0px;
-  --radius-pill: 0px;
+  --radius-sm: 12px;
+  --radius-md: 20px;
+  --radius-lg: 32px;
+  --radius-pill: 999px;
   --container: 1376px;
   --section-y: clamp(72px, 8vw, 128px);
   --font-sans: "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", "Helvetica Neue", Arial, sans-serif;
@@ -1095,7 +1087,7 @@ ol {
   margin-top: 30px;
   padding: 7px 8px 7px 36px;
   border: 1px solid rgba(255, 255, 255, 0.96);
-  border-radius: 999px !important;
+  border-radius: var(--radius-pill);
   background: transparent;
 }
 
@@ -1104,7 +1096,7 @@ ol {
   min-height: 58px;
   padding: 0;
   border: 0;
-  border-radius: 999px !important;
+  border-radius: var(--radius-pill);
   outline: 0;
   color: #fff;
   background: transparent;
@@ -1128,7 +1120,7 @@ ol {
   min-height: 58px;
   padding-inline: 28px;
   border: 0;
-  border-radius: 999px !important;
+  border-radius: var(--radius-pill);
   color: #5e554a;
   background: #fff;
   box-shadow: none;
@@ -2044,7 +2036,7 @@ ol {
     display: grid;
     min-height: 0;
     padding: 10px;
-    border-radius: 28px !important;
+    border-radius: 28px;
   }
 
   .subscription .inline-form input {
